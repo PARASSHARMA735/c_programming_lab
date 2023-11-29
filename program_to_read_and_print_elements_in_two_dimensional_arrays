@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#define ROWS 3 // Number of rows in the array
+#define COLS 4 // Number of columns in the array
+
+int main() {
+    int array[ROWS][COLS];
+    int i, j;
+
+    // Reading elements into the array
+    printf("Enter elements for the %d x %d array:\n", ROWS, COLS);
+    for (i = 0; i < ROWS; i++) {
+        for (j = 0; j < COLS; j++) {
+            printf("Enter element for position (%d,%d): ", i, j);
+            scanf("%d", &array[i][j]);
+        }
+    }
+
+    // Printing elements of the array
+    printf("\nElements in the %d x %d array:\n", ROWS, COLS);
+    for (i = 0; i < ROWS; i++) {
+        for (j = 0; j < COLS; j++) {
+            printf("%d\t", array[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}

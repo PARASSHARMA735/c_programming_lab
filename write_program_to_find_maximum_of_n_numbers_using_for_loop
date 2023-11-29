@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int n, num,i;
+    int max =-1;
+    
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; ++i) {
+        printf("Enter number %d: ", i);
+        scanf("%d", &num);
+
+        if (num > max) {
+            max = num;
+        }
+    }
+
+    printf("The maximum number is %d\n", max);
+
+    return 0;
+}

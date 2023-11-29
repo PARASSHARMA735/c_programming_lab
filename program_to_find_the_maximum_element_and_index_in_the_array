@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int arr[] = { 10, 35, 18, 79, 22 };
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int max = arr[0];
+    int index = 0;
+
+    // Finding the maximum element and its index
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            index = i;
+        }
+    }
+
+    printf("The maximum element in the array is %d at index %d.\n", max, index);
+
+    return 0;
+}
